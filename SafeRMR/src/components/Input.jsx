@@ -12,9 +12,9 @@ export default function Input({ label, error, ...props }) {
 }
 
 const styles = StyleSheet.create({
-  wrapper: { marginBottom: 14 },
-  label: { color: colors.ink, fontSize: 13, fontWeight: '700', marginBottom: 7 },
-  input: { backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border, borderRadius: 11, color: colors.ink, fontSize: 16, minHeight: 50, paddingHorizontal: 14 },
+  wrapper: { marginBottom: 16 },
+  label: { color: colors.ink, fontSize: 13, fontWeight: '800', marginBottom: 7 },
+  input: { backgroundColor: colors.surface, borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.ink, fontSize: 16, minHeight: 54, paddingHorizontal: 15 },
   inputError: { borderColor: colors.red },
   error: { color: colors.red, fontSize: 12, marginTop: 5 },
 });

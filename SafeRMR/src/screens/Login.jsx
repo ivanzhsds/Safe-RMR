@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Button from '../components/Button';
+import BrandLogo from '../components/BrandLogo';
 import Input from '../components/Input';
 import { colors, appStyles } from '../styles/theme';
 
@@ -22,7 +23,7 @@ export default function Login({ navigation }) {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={appStyles.screen}>
       <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-        <Text style={styles.kicker}>SAFE RMR</Text>
+        <BrandLogo />
         <Text style={appStyles.title}>Olá, vamos cuidar do seu caminho.</Text>
         <Text style={[appStyles.subtitle, styles.intro]}>Monitore a chuva e receba informações de risco perto de você.</Text>
         <View style={styles.form}>

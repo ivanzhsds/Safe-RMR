@@ -10,12 +10,12 @@ export default function Button({ title, onPress, variant = 'primary', loading = 
 }
 
 const styles = StyleSheet.create({
-  base: { minHeight: 52, borderRadius: 12, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 18 },
-  primary: { backgroundColor: colors.blue },
+  base: { alignItems: 'center', borderRadius: 14, justifyContent: 'center', minHeight: 54, paddingHorizontal: 18 },
+  primary: { backgroundColor: colors.blue, elevation: 2, shadowColor: colors.blue, shadowOpacity: 0.22, shadowRadius: 6 },
   secondary: { backgroundColor: colors.teal },
-  outline: { borderWidth: 1, borderColor: colors.blue, backgroundColor: 'transparent' },
-  danger: { backgroundColor: colors.red },
-  text: { color: colors.surface, fontSize: 16, fontWeight: '800' },
+  outline: { backgroundColor: colors.surface, borderColor: colors.blue, borderWidth: 1.5 },
+  danger: { backgroundColor: colors.redDark, elevation: 2, shadowColor: colors.red, shadowOpacity: 0.22, shadowRadius: 6 },
+  text: { color: colors.surface, fontSize: 16, fontWeight: '900' },
   outlineText: { color: colors.blue },
   pressed: { opacity: 0.78 },
 });
